@@ -1,0 +1,123 @@
+:root {
+  --bg: #0d192b;
+  --card-bg: #14253d;
+  --primary-text: #fff;
+  --secondary-text: #8bacda;
+  --tertiary-text: #00fff7;
+  --border-color: #2f415b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 400 1rem "Poppins", sans-serif;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--bg);
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+.hero {
+  margin: 0 auto;
+  max-width: 352px;
+}
+
+.sub-hero {
+  padding: 24px 24px 32px 24px;
+
+  background-color: var(--card-bg);
+  border-radius: 14px;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.text-hero h1 {
+  margin-top: 22px;
+
+  color: var(--primary-text);
+  font-size: 22px;
+}
+
+.text-hero p {
+  margin-top: 18px;
+
+  color: var(--secondary-text);
+}
+
+.prominence {
+  margin-top: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-prominence {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sub-prominence span {
+  color: var(--tertiary-text);
+  font-weight: 600;
+}
+
+.sub-prominence + .sub-prominence span {
+  color: var(--secondary-text);
+  font-weight: 400;
+}
+
+.footer {
+  margin-top: 22px;
+  padding-top: 20px;
+
+  border-top: 0.5px solid var(--border-color);
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer span {
+  color: var(--secondary-text);
+}
+
+.footer span a {
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.footer span a:hover {
+  text-decoration: underline;
+}
+
+.footer img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-text);
+}
